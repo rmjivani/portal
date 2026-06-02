@@ -1,13 +1,19 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-color: whitesmoke;
     font-size: 0.95em;
-    line-height: 1.5em;
 }
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0 auto;
+    padding: 20px;
+    max-width:1200px;
+  }
 
 ::selection {
     color: #000; 
@@ -19,10 +25,6 @@ h1 {
     margin: auto;
     background: #fff;
     line-height: 2.5em;
-}
-
-h1.heading{
-    font-family:Quicksand;
 }
 
 main.wrapper {
@@ -56,6 +58,8 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+/* end global rules */
 
 /* Responsive rules */
 
@@ -115,3 +119,109 @@ footer {
     }
     
 }
+
+/* start project container rules */
+  
+.projects-container {
+    max-width: 900px;  /* Keeps things readable on desktop */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* The Main Project Card Wrapper */
+  .project-card {
+    display: flex;
+    flex-direction: row; /* Default layout: Image left, text right */
+    align-items: center;
+    gap: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px; /* Smooth rounded corners */
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-2px); /* Subtle interaction cue */
+  }
+  
+  /* The Magic Mirror: Automatically alternate left/right layout */
+  .project-card:nth-child(even) {
+    flex-direction: row-reverse; /* Flips the order for every second card */
+  }
+  
+  /* Image Control Group */
+  .project-image {
+    flex-shrink: 0; /* Prevents text from squeezing the image container */
+  }
+  
+  .project-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Forces screenshots to crop nicely instead of squishing */
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+  }
+  
+  /* Content & CTA Link Elements */
+  .project-content {
+    flex-grow: 1;
+  }
+  
+  .project-content h2 {
+    margin-top: 0;
+    color: #1e293b;
+  }
+  
+  .project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Flexible, clean Button styles */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .demo-btn {
+    background-color: darkcyan;
+    color: #ffffff;
+  }
+  
+  .demo-btn:hover {
+    background-color: rgb(95, 95, 95);
+  }
+  
+  .repo-btn {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+  }
+  
+  .repo-btn:hover {
+    background-color: rgb(95, 95, 95);
+  }
+  
+  /* Responsive Overrides: If screen is small, stack everything vertically */
+  @media (max-width: 650px) {
+    .project-card, 
+    .project-card:nth-child(even) {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .project-links {
+      justify-content: center;
+    }
+  }
+
+/* end project container rules */

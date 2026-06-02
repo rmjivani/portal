@@ -1,12 +1,4 @@
-/* Base Layout Settings */
-body {
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-  }
+/* start project container rules */
   
   .projects-container {
     max-width: 900px;  /* Keeps things readable on desktop */
@@ -109,3 +101,5 @@ body {
       justify-content: center;
     }
   }
+
+/* end project container rules */
