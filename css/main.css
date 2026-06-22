@@ -20,11 +20,28 @@ body {
     background: #ff0;
 }
 
-h1 {
-    font-weight: normal;
+.site-title {
+    width: 80%;
     margin: auto;
     background: #fff;
-    line-height: 2.5em;
+    padding: 2em 1%;
+}
+
+.site-title h1 {
+    margin: 0;
+    line-height: 1;
+    background: transparent;
+}
+
+.tagline {
+    margin: 0.6em 0 0 0;
+    color: #555;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-weight: normal;
 }
 
 main.wrapper {
