@@ -4,6 +4,7 @@
         font-size: 0.8em;      /* Makes the star slightly smaller than the text */
         margin-left: 10px;    /* Adds space from the H1 text */
         vertical-align: middle; /* Aligns it with the center of the text line */
+        color: #D4A017;
         
         /* Link the animation called 'starShimmer' defined below */
         animation: starShimmer 1.8s ease-in-out infinite; 

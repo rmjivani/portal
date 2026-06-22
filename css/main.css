@@ -1,15 +1,15 @@
 /* Global rules */
 
 html {
-    background-color: whitesmoke;
+    background: color #f8fafc;;
     font-size: 0.95em;
 }
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f8fafc;
+    color: #334155;
     margin: 0 auto;
     padding: 20px;
     max-width:1200px;
@@ -60,13 +60,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color:#0f766e;
     text-decoration: none;
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
+    color: white;
+    background-color: #0f766e;
     text-decoration: none;
 }
 
@@ -210,7 +210,7 @@ footer {
   }
   
   .demo-btn {
-    background-color: darkcyan;
+    background-color: #0f766e;
     color: #ffffff;
   }
   
